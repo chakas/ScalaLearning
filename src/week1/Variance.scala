@@ -7,7 +7,7 @@ case class ParkingInvariant[A](value: A)
 case class ParkingCovariant[+A](value: A)
 case class ParkingContravariant[-A]()
 
-object Util {
+object Variance {
   def main(args: Array[String]): Unit = {
       val vehicleIdentity = (vehicle:Vehicle) => vehicle
       println(vehicleIdentity(Car()))
