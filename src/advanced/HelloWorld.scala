@@ -1,4 +1,4 @@
-package com.amadeus
+package advanced
 
 import java.lang.Math._
 

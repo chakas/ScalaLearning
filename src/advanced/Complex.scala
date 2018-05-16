@@ -1,4 +1,4 @@
-package com.amadeus
+package advanced
 
 class Complex(real: Double,imaginary: Double){
   def re() = real
