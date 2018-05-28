@@ -15,7 +15,8 @@ object Macros {
   // debug methods take String param
   def debug(msg:Any): Unit = macro debug_impl
   
-  //debug macro implementation which uses the same params of the parent -> msg and UNIT
+  //debug macro implementation which uses dir
+//  the same params of the parent -> msg and UNIT
   def debug_impl(c:Context)(msg: c.Expr[Any]):c.Expr[Unit] = {
     import c.universe._
     reify {println("Got input :"+msg.splice)}
